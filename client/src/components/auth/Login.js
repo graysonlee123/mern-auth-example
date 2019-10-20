@@ -18,12 +18,12 @@ class Login extends Component {
     componentDidMount() {
         // If logged in redirect to dashboard
         if (this.props.auth.isAuthenticated) {
-        this.props.history.push("/dashboard");
+        this.props.history.push('/dashboard');
         }
     }
 
-    componentWillReceiveProps(nextProps) {
-        if (nextProps.auth.idAuthenticated) {
+    UNSAFE_componentWillReceiveProps(nextProps) {
+        if (nextProps.auth.isAuthenticated) {
             this.props.history.push('/dashboard');
         }
 
