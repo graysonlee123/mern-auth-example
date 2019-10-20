@@ -95,7 +95,7 @@ class Login extends Component {
                                     invalid: errors.password || errors.passwordincorrect
                                 })}
                             />
-                            <label htmlFor="password">password</label>
+                            <label htmlFor="password">Password</label>
                             <span className="red-text">
                                 {errors.password}
                                 {errors.passwordincorrect}
